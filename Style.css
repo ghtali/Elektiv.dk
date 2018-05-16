@@ -1,0 +1,248 @@
+/*
+Theme Name:   	Storefront Child Theme
+Theme URI:    	https://github.com/stuartduff/storefront-child-theme
+Author:       	Stuart Duff
+Author URI:     http://stuartduff.com
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+/*
+ * Add your own custom css below this text.
+ */
+
+/*Fixing body overflow in "site" css class
+.site {
+    overflow-x: initial;
+}
+*/
+/*
+.clearfix {
+@include clearfix;
+}
+*/
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+
+.logo-main{
+    height: 50px;
+    width: 300px;
+    di½splay: block;
+    padding-top: 50px;
+}
+
+/*Declare ec font*/
+@font-face {
+    font-family: "myfont";
+    src: url("assets/fonts/font-electro.woff") format('woff');
+}
+
+/*removeing side bar in product page, required change in php.function and css*/
+body.woocommerce #primary {
+    width: 100%;
+}
+
+.single-product .x-container.max.width.offset {
+    max-width: 100%;
+    width: 100%;
+}
+.topclass input[type=submit] {
+    background: #eee;
+    border: 0;
+}
+.topclass input[type=search] {
+    border: 0;
+}
+
+/*Header*/
+.top-bar {
+    border-bottom: 1px solid #ddd;
+    padding: .786em 0;
+}
+.nav-inline .menu-item {
+    display: inline-block;
+    color: #334141;
+    font-size: .929em;
+
+}.menu-item-space{
+     padding-right: 3px;
+ }
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: white;
+
+}
+
+.nav>li>a {
+    color: #0f0f0f;
+    font-size: 14px;
+}
+
+
+
+
+.logo-txt{
+    text-decoration-color: red;
+    font-size: 20px;
+}
+
+.page-template-template-homepage .type-page {
+    padding-top: 2.617924em;
+    padding-bottom: 2.617924em;
+    position: relative;
+    display: none;
+}
+.storefront-product-section .section-title {
+    text-align: center;
+    margin-bottom: 1em;
+    display: none;
+}
+div.video-wrapper, body, html {
+    height: 100%;
+    width: 100%;
+}
+
+a.thumbnail:hover {
+    border: none;
+    background: transparent;
+}
+.thumbnail {
+    display: contents;
+}
+.a.h1{
+    text-decoration: none;
+}
+thumbnail a>img, .thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+}
+
+.captions{
+    text-align: center;
+}
+
+/*Size fix for tablet in front page
+.sizefix {
+    height: 194px;
+}
+*/
+
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+.pfont{
+    font-size: 60px;
+}
+.psquare{
+    width: auto;
+    height: 150px;
+    background-color: #1abc9c;
+    font-size:115%;
+    font-weight:500;
+    text-align:center;
+}
+.psquare:before { content: "\f109"; }
+.psquare:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size:70px;
+    top: 0;
+    left: 10px;
+    color:#fff;
+    opacity:.2;
+}
+.psquare1{
+     width: auto;
+     height: 150px;
+     background-color: #2ecc71;
+ }
+.psquare2{
+    width: auto;
+    height: 150px;
+    background-color: #e74c3c;
+}
+.psquare3{
+    width: auto;
+    height: 150px;
+    background-color: #9b59b6;
+}
+.psquare4{
+    width: auto;
+    height: 150px;
+    background-color: #34495e;
+}
+.psquare5{
+    width: auto;
+    height: 150px;
+    background-color: #f1c40f;
+}
+.psquare6{
+    width: auto;
+    height: 150px;
+    background-color: #27ae60;
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+
+    .psquare{
+        width: 295px;
+        height: 190px;
+        background-color: #1abc9c;
+    }.psquare1{
+         width: 295px;
+         height: 190px;
+         background-color: #2ecc71;
+     }
+    .psquare2{
+        width: 295px;
+        height: 190px;
+        background-color: #e74c3c;
+    }
+    .psquare3{
+        width: 295px;
+        height: 190px;
+        background-color: #9b59b6;
+    }
+    .psquare4{
+        width: 295px;
+        height: 190px;
+        background-color: #34495e;
+    }
+    .psquare5{
+        width: 295px;
+        height: 190px;
+        background-color: #f1c40f;
+    }
+    .psquare6{
+        width: 295px;
+        height: 190px;
+        background-color: #27ae60;
+    }
+}
